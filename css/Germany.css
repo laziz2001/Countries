@@ -43,6 +43,7 @@ body {
 a {
     list-style: none;
     text-decoration: none;
+    color:var(--text-color)
 }
 
 img {
@@ -90,96 +91,92 @@ img {
     align-items: center;
 }
 
-
-/* Main section */
-.main{
-    background-color: #fafafa;
-}
-
-/* Search-filter */
-.search-filter {
+/* Back */
+.back {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    width: 136px;
+    height: 40px;
     margin-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 80px;
+    padding: 10px 40px;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.29);
+    color: var(--text-color);
 }
 
-.search {
-    width: 480px;
-    height: 56px;
-}
-
-.search-input {
-    width: 100%;
-    padding: 18px 32px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
-}
-
-.search-input::before {
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/search.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    content: "";
-}
-
-#filter-name {
-    width: 200px;
-    height: 56px;
-    padding: 18px 24px;
-    border-radius: 5px;
-}
-
-.countries-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 75px;
-}
-
-.country-flag {
-    width: 264px;
-    height: 336px;
-    border-radius: 5px;
-    background-color: var(--bg-color);
-    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
-}
-
-.country-flag-link {
-    color: var(--text-color)
-}
-
-.country-flag-img {
+.back-img {
     display: block;
-    width: 267px;
-    height: 160px;
-    margin-top: 0;
-    margin-bottom: 24px;
+    margin-right: 10px;
 }
 
-.country-flag-blog {
-    margin-top: 0;
-    margin-left: 24px;
-}
-
-.country-flag-tittle {
-    font-weight: 800;
+.back-text {
     font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 16px;
-}
-
-.country-flag-text {
     font-weight: 300;
 }
 
-.country-flag-text:not(:last-child) {
-    margin-bottom: 8px;
+/* Country-blog */
+.country-blog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.country-flag-main {
+.country-blog-img {
+    display: block;
+    border-radius: 15px;
+}
+
+
+.country-blog-main {
+    width: 598px;
+    height: 323px;
+}
+
+.country-blog-information-title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 800;
+    font-size: 32px;
+}
+.country-blog-main-information {
+    display: flex;
+    justify-content: space-between;
+}
+
+.country-blog-main-information-left {
+    width: 207px;
+    height: 160px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+
+.country-blog-main-border {
+    display: flex;
+    align-items: center;
+}
+.country-blog-main-border-title {
+    margin-top: 0;
+    margin-right: 15px;
+    font-size: 16px;
     font-weight: 600;
+    line-height: 1.5;
+}
+
+.country-blog-main-border-links {
+}
+
+.country-blog-main-border-link {
+    width: 960px;
+    height: 28px;
+    padding: 5px 20px;
+    font-weight: 300;
+    border-radius: 2px;
+    box-shadow: 0px 0px 4px 1px rgb(0, 0, 0, 0.10);
+}
+
+.country-blog-main-border-link:not(:last-child){
+    margin-right: 10px;
 }
