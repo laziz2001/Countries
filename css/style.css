@@ -41,6 +41,7 @@ body {
 a {
     list-style: none;
     text-decoration: none;
+    color: var(--text-color)
 }
 
 /* DAR MODE */
@@ -124,7 +125,7 @@ img {
 
 /* Main section */
 .main{
-    background-color: var(--bg-color);
+    flex-grow: 1;
 }
 
 /* Search-filter */
@@ -132,6 +133,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 48px;
 }
 
 .search-input {
@@ -166,18 +168,18 @@ img {
     width: 264px;
     height: 336px;
     border-radius: 5px;
-    background-color: var(--bg-color);
+    background-color: var(--element-bg);
+    color: var(--text-color);
     box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
 }
 
-.country-flag-link {
-    color: var(--text-color)
-}
 
 .country-flag-img {
     display: block;
-    width: 267px;
+    width: 264px;
     height: 160px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 7px;
     margin-top: 0;
     margin-bottom: 24px;
 }
