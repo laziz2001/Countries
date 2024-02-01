@@ -1,10 +1,13 @@
 :root {
     --text-color: #111517;
-    --bg-color: #fff;
+    --bg-color: #fafafa;
+    --element-bg: #fff;
 }
 
+/* DAR MODE */
 .dark {
-    --bg-color: #111517;
+    --bg-color: #202c36;
+    --element-bg: #2b3844;
     --text-color: #fff;
 }
 
@@ -61,82 +64,34 @@ img {
 }
 
 
-/* Header
-.site-header {
-    margin-top: 0;
-    margin-bottom: 48px;
-    padding-top: 23px;
-    padding-bottom: 24px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
-    background: #fff;
-}
 
-.site-header-main {
-    display: flex;
-}
-
-.site-header-link{
-    margin-right: auto;
-}
-
-.site-header-title {
-    font-weight: 800;
-    font-size: 24px;
-    color: var(--text-color);
-}
-
-.dark-mode {
-    padding: 0;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
-}
-
-.dark-mode:hover {
-    opacity: 0.8;
-}
-
-.dark-mode:active {
-    opacity: 0.6;
-}
-
-.dark-mode-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.dark-mode-inner-img {
-    display: block;
-}
-
-.dark-mode-inner-text {
-    margin-left: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 16px;
-    color: var(--text-color);
-}
- */
 
 /* Back */
 .back {
     display: flex;
     align-items: center;
-    width: 136px;
-    height: 40px;
+    max-width: 136px;
     margin-top: 0;
     margin-bottom: 80px;
     padding: 10px 40px;
     border-radius: 6px;
-    background: #FFF;
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.29);
+    background-color: var(--element-bg);
     color: var(--text-color);
+}
+
+.back:hover {
+    opacity: 0.8;
+}
+
+.back:active {
+    opacity: 0.6;
 }
 
 .back-img {
     display: block;
     margin-right: 10px;
+    box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.1);
 }
 
 .back-text {
@@ -194,17 +149,30 @@ img {
 }
 
 .country-blog-main-border-links {
+    display: flex;
 }
 
 .country-blog-main-border-link {
-    width: 960px;
-    height: 28px;
-    padding: 5px 20px;
+    min-width: 96px;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: 5px 10px;
     font-weight: 300;
     border-radius: 2px;
     box-shadow: 0px 0px 4px 1px rgb(0, 0, 0, 0.10);
+    background-color: var(--element-bg);
+    color: var(--text-color);
 }
 
 .country-blog-main-border-link:not(:last-child){
     margin-right: 10px;
+}
+
+.country-blog-main-border-link:hover {
+    opacity: 0.8;
+}
+
+.country-blog-main-border-link:active {
+    opacity: 0.6;
 }
