@@ -61,18 +61,18 @@ img {
 }
 
 
-/* Header */
+/* Header
 .site-header {
     margin-top: 0;
     margin-bottom: 48px;
+    padding-top: 23px;
+    padding-bottom: 24px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
     background: #fff;
 }
 
 .site-header-main {
     display: flex;
-    margin-top: 23px;
-    margin-bottom: 24px;
 }
 
 .site-header-link{
@@ -86,10 +86,38 @@ img {
 }
 
 .dark-mode {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.dark-mode:hover {
+    opacity: 0.8;
+}
+
+.dark-mode:active {
+    opacity: 0.6;
+}
+
+.dark-mode-inner {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.dark-mode-inner-img {
+    display: block;
+}
+
+.dark-mode-inner-text {
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    color: var(--text-color);
+}
+ */
 
 /* Back */
 .back {
