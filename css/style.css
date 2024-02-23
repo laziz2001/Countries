@@ -136,6 +136,17 @@ img {
     margin-bottom: 48px;
 }
 
+.search-filter-wrapper{
+    position: relative;
+}
+.search-filter-icon {
+    position: absolute;
+    top: 19px;
+    left: 32px;
+    color: var(--text-color);
+    pointer-events: none;
+}
+
 .search-input {
     min-width: 480px;
     padding: 18px 74px;
